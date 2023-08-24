@@ -1,0 +1,25 @@
+.nav_icon {
+    height: 50px;
+    mix-blend-mode: multiply;
+    cursor: pointer;
+}
+
+.marg1 {
+    font-family: 'Neo Sans Arabic', sans-serif;
+    text-align: end;
+    color: #2E2E2E;
+    cursor: pointer;
+
+
+}
+
+.marg2 {
+    font-family: 'Neo Sans Arabic', sans-serif;
+    text-align: end;
+    color: #CFCFCF;
+
+
+
+
+
+}
