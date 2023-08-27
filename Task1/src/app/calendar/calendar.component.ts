@@ -12,6 +12,34 @@ export class CalendarComponent {
   year_display:number=0;
   month_lim=[31,28,31,30,31,30,31,31,30,31,30,31];
 
+color_task1_day1:string="#5961F900";
+color_task2_day1:string="#3DD598";
+color_task3_day1:string="#5961F900";
+
+color_task1_day2:string="#3DD59800";
+color_task2_day2:string="#FC9A0000";
+color_task3_day2:string="#5961F900";
+
+color_task1_day3:string="#3DD598";
+color_task2_day3:string="#FC9A00";
+color_task3_day3:string="#5961F9";
+
+color_task1_day4:string="#3DD598";
+color_task2_day4:string="#FC9A00";
+color_task3_day4:string="#5961F900";
+
+color_task1_day5:string="#3DD59800";
+color_task2_day5:string="#FC9A0000";
+color_task3_day5:string="#5961F900";
+
+color_task1_day6:string="#292D3214";
+color_task2_day6:string="#292D3214";
+color_task3_day6:string="#292D3214";
+
+color_task1_day7:string="#5961F900";
+color_task2_day7:string="#FF4B55";
+color_task3_day7:string="#5961F900";
+
 
      curent_date:string="";
   
