@@ -23,6 +23,9 @@ export class CalendarComponent {
   day: number = this.now.getDate();
   ss: number = this.now.getDay();
 
+  
+  
+
   current_display_date:string="";
 
    constructor(){
@@ -348,6 +351,45 @@ calender_today7_text:string="السبت";
   if(this.month_display==12){this.month_display=0; this.year_display++;}
   this.current_display_date=this.year+" "+this.month_names[this.month_display];
 
+  this.calender_today1_circle="#ebebeb00";
+this.calender_today2_circle="#ebebeb00";
+this.calender_today3_circle="#ebebeb00";
+this.calender_today4_circle="#ebebeb00";
+this.calender_today5_circle="#ebebeb00";
+this.calender_today6_circle="#ebebeb00";
+this.calender_today7_circle="#ebebeb00";
+
+this.calender_today1_text_color="#B4B4B4";
+this.calender_today2_text_color="#B4B4B4";
+this.calender_today3_text_color="#B4B4B4";
+this.calender_today4_text_color="#B4B4B4";
+this.calender_today5_text_color="#B4B4B4";
+this.calender_today6_text_color="#B4B4B4";
+this.calender_today7_text_color="#B4B4B4";
+
+this.calender_today1_number_color="#292D32";
+this.calender_today2_number_color="#292D32";
+this.calender_today3_number_color="#292D32";
+this.calender_today4_number_color="#292D32";
+this.calender_today5_number_color="#292D32";
+this.calender_today6_number_color="#292D32";
+this.calender_today7_number_color="#292D32";
+
+  if(this.month_display==this.now.getMonth()  && this.year_display==this.now.getFullYear()){
+
+
+ if(this.calender_today1_number==this.now.getDate()){this.calender_today1_circle="#292D32"; this.calender_today1_text_color="#292D32";this.calender_today1_number_color="#FFFFFF";} 
+ else if(this.calender_today2_number==this.now.getDate()){this.calender_today2_circle="#292D32"; this.calender_today2_text_color="#292D32";this.calender_today2_number_color="#FFFFFF";} 
+ else if(this.calender_today3_number==this.now.getDate()){this.calender_today3_circle="#292D32"; this.calender_today3_text_color="#292D32";this.calender_today3_number_color="#FFFFFF";} 
+ else if(this.calender_today4_number==this.now.getDate()){this.calender_today4_circle="#292D32"; this.calender_today4_text_color="#292D32";this.calender_today4_number_color="#FFFFFF";} 
+ else if(this.calender_today5_number==this.now.getDate()){this.calender_today5_circle="#292D32"; this.calender_today5_text_color="#292D32";this.calender_today5_number_color="#FFFFFF";} 
+ else if(this.calender_today6_number==this.now.getDate()){this.calender_today6_circle="#292D32"; this.calender_today6_text_color="#292D32";this.calender_today6_number_color="#FFFFFF";} 
+ else if(this.calender_today7_number==this.now.getDate()){this.calender_today7_circle="#292D32"; this.calender_today7_text_color="#292D32";this.calender_today7_number_color="#FFFFFF";} 
+
+
+
+  }
+
  
   
   }
@@ -402,31 +444,50 @@ if(this.calender_today7_number<1){this.calender_today7_number=this.month_lim[thi
   if(this.month_display==-1){this.month_display=11; this.year_display--;}
   this.current_display_date=this.year+" "+this.month_names[this.month_display];
 
-    this.calender_today1_circle="#ebebeb00";
-    this.calender_today2_circle="#ebebeb00";
-    this.calender_today3_circle="#ebebeb00";
-    this.calender_today4_circle="#ebebeb00";
-    this.calender_today5_circle="#ebebeb00";
-    this.calender_today6_circle="#ebebeb00";
-    this.calender_today7_circle="#ebebeb00";
+     this.calender_today1_circle="#ebebeb00";
+   this.calender_today2_circle="#ebebeb00";
+   this.calender_today3_circle="#ebebeb00";
+   this.calender_today4_circle="#ebebeb00";
+   this.calender_today5_circle="#ebebeb00";
+   this.calender_today6_circle="#ebebeb00";
+   this.calender_today7_circle="#ebebeb00";
+this.calender_today1_text_color="#B4B4B4";
+this.calender_today2_text_color="#B4B4B4";
+this.calender_today3_text_color="#B4B4B4";
+this.calender_today4_text_color="#B4B4B4";
+this.calender_today5_text_color="#B4B4B4";
+this.calender_today6_text_color="#B4B4B4";
+this.calender_today7_text_color="#B4B4B4";
+this.calender_today1_number_color="#292D32";
+this.calender_today2_number_color="#292D32";
+this.calender_today3_number_color="#292D32";
+this.calender_today4_number_color="#292D32";
+this.calender_today5_number_color="#292D32";
+this.calender_today6_number_color="#292D32";
+this.calender_today7_number_color="#292D32";
 
- this.calender_today1_text_color="#B4B4B4";
- this.calender_today2_text_color="#B4B4B4";
- this.calender_today3_text_color="#B4B4B4";
- this.calender_today4_text_color="#B4B4B4";
- this.calender_today5_text_color="#B4B4B4";
- this.calender_today6_text_color="#B4B4B4";
- this.calender_today7_text_color="#B4B4B4";
+    if(this.month_display==this.now.getMonth()  && this.year_display==this.now.getFullYear()){
 
- this.calender_today1_number_color="#292D32";
- this.calender_today2_number_color="#292D32";
- this.calender_today3_number_color="#292D32";
- this.calender_today4_number_color="#292D32";
- this.calender_today5_number_color="#292D32";
- this.calender_today6_number_color="#292D32";
- this.calender_today7_number_color="#292D32";
+    console.log(this.now.getDate());  
 
-   }
+      
+
+ if(this.calender_today1_number==this.now.getDate()){this.calender_today1_circle="#292D32"; this.calender_today1_text_color="#292D32";this.calender_today1_number_color="#FFFFFF";} 
+ else if(this.calender_today2_number==this.now.getDate()){this.calender_today2_circle="#292D32"; this.calender_today2_text_color="#292D32";this.calender_today2_number_color="#FFFFFF";} 
+ else if(this.calender_today3_number==this.now.getDate()){this.calender_today3_circle="#292D32"; this.calender_today3_text_color="#292D32";this.calender_today3_number_color="#FFFFFF";} 
+ else if(this.calender_today4_number==this.now.getDate()){this.calender_today4_circle="#292D32"; this.calender_today4_text_color="#292D32";this.calender_today4_number_color="#FFFFFF";} 
+ else if(this.calender_today5_number==this.now.getDate()){this.calender_today5_circle="#292D32"; this.calender_today5_text_color="#292D32";this.calender_today5_number_color="#FFFFFF";} 
+ else if(this.calender_today6_number==this.now.getDate()){this.calender_today6_circle="#292D32"; this.calender_today6_text_color="#292D32";this.calender_today6_number_color="#FFFFFF";} 
+ else if(this.calender_today7_number==this.now.getDate()){this.calender_today7_circle="#292D32"; this.calender_today7_text_color="#292D32";this.calender_today7_number_color="#FFFFFF";} 
+
+
+
+  }
+
+ 
+ 
+
+}
 
 
 
