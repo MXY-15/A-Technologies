@@ -1,122 +1,218 @@
-<div style="border-top: 1px solid #EBEBEB;"></div>
-<div style="height: 30%;">
-    <P style="font-family: 'Neo Sans Arabic', sans-serif;
-    text-align: end;
-    color: #23262F; float: right;
-    font-size: 12px; margin-top: 25px;margin-right: 25px;font-weight: bold;">تقويم المواعيد</P>
 
+<div style="height: 25%; width: 100%;  float: left;">
 
-    <img (click)="calender_week_m()" src="../../assets/icon.png" style="float: right;margin-top: 25px;margin-right: 25px;cursor: pointer;">
+    <div style="border-top: 1px solid #EBEBEB;"></div>
+    <div style="height: 30%;">
+        <P style="font-family: 'Neo Sans Arabic', sans-serif;
+        text-align: end;
+        color: #23262F; float: right;
+        font-size: 12px; margin-top: 25px;margin-right: 25px;font-weight: bold;">تقويم المواعيد</P>
+    
+    
+        <img (click)="calender_week_m()" src="../../assets/icon.png"
+            style="float: right;margin-top: 25px;margin-right: 25px;cursor: pointer;">
+    
+        <img (click)="calender_week_p()" src="../../assets/icon (1).png"
+            style="float: right;margin-top: 25px;margin-right: 25px;cursor: pointer;">
 
-    <img (click)="calender_week_p()" src="../../assets/icon (1).png" style="float: right;margin-top: 25px;margin-right: 25px;cursor: pointer;">
+            <div style="background-color: #23262F;float: left; width: 93px;
+height: 35.25px;border-radius: 8.25px; background-color: #F7F6FD; margin-top: 10px;margin-left: 25.5px;">
 
+<img src="../../assets/calendar-23.png" style="float: right; margin-top: 9px; margin-right: 8.25px;">
 
-</div>
-<div style="height: 70%; border-top: 1px dotted #EEEDF2;border-bottom: 1px dotted #EEEDF2;">
-
-    <div [style.background-color]="calender_today1_select" (click)="calender_press1()"
-        style="width: 40.5px;cursor: pointer;
-height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px; margin-right: 10px; margin-left: 25px;">
-        <P [style.color]="calender_today1_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
-    text-align: center;
-    font-size: 7px; margin-top: 15px;">{{calender_today1_text}}</P>
-        <div [style.background-color]="calender_today1_circle"
-            style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
-            <P [style.color]="calender_today1_number_color" style="font-family: 'Inter' ;
-                            text-align: center;
-                           padding-top:5px;
-                            font-size: 13.5px;font-weight: bold; ">{{calender_today1_number}}</P>
-        </div>
-    </div>
-
-    <div [style.background-color]="calender_today2_select" (click)="calender_press2()" style="width: 40.5px;cursor: pointer;
-height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px; margin-right: 10px;">
-        <P [style.color]="calender_today2_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
-    text-align: center;
-    font-size: 7px; margin-top: 15px;">{{calender_today2_text}}</P>
-        <div [style.background-color]="calender_today2_circle"
-            style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
-            <P [style.color]="calender_today2_number_color" style="font-family: 'Inter' ;
-                            text-align: center;
-                           padding-top:5px;
-                            font-size: 13.5px;font-weight: bold; ">{{calender_today2_number}}</P>
-        </div>
-    </div>
-
-    <div [style.background-color]="calender_today3_select" (click)="calender_press3()" style="width: 40.5px;cursor: pointer;
-height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px; margin-right: 10px;">
-        <P [style.color]="calender_today3_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
-    text-align: center;
-    font-size: 7px; margin-top: 15px;">{{calender_today3_text}}</P>
-        <div [style.background-color]="calender_today3_circle"
-            style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
-            <P [style.color]="calender_today3_number_color" style="font-family: 'Inter' ;
-                            text-align: center;
-                           padding-top:5px;
-                            font-size: 13.5px;font-weight: bold; ">{{calender_today3_number}}</P>
-        </div>
-    </div>
-
-    <div [style.background-color]="calender_today4_select" (click)="calender_press4()" style="width: 40.5px;cursor: pointer;
-height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px; margin-right: 10px;">
-        <P [style.color]="calender_today4_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
-    text-align: center;
-    font-size: 7px; margin-top: 15px;">{{calender_today4_text}}</P>
-        <div [style.background-color]="calender_today4_circle"
-            style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
-            <P [style.color]="calender_today4_number_color" style="font-family: 'Inter' ;
-                            text-align: center;
-                           padding-top:5px;
-                            font-size: 13.5px;font-weight: bold; ">{{calender_today4_number}}</P>
-        </div>
-    </div>
-
-    <div [style.background-color]="calender_today5_select" (click)="calender_press5()" style="width: 40.5px;cursor: pointer;
-height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px; margin-right: 10px;">
-        <P [style.color]="calender_today5_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
-    text-align: center;
-    font-size: 7px; margin-top: 15px;">{{calender_today5_text}}</P>
-        <div [style.background-color]="calender_today5_circle"
-            style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
-            <P [style.color]="calender_today5_number_color" style="font-family: 'Inter' ;
-                            text-align: center;
-                           padding-top:5px;
-                            font-size: 13.5px;font-weight: bold; ">{{calender_today5_number}}</P>
-        </div>
-    </div>
-
-    <div [style.background-color]="calender_today6_select" (click)="calender_press6()" style="width: 40.5px;cursor: pointer;
-height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px; margin-right: 10px;">
-        <P [style.color]="calender_today6_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
-    text-align: center;
-    font-size: 7px; margin-top: 15px;">{{calender_today6_text}}</P>
-        <div [style.background-color]="calender_today6_circle"
-            style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
-            <P [style.color]="calender_today6_number_color" style="font-family: 'Inter' ;
-                            text-align: center;
-                           padding-top:5px;
-                            font-size: 13.5px;font-weight: bold; ">{{calender_today6_number}}</P>
-        </div>
-    </div>
-
-    <div [style.background-color]="calender_today7_select" (click)="calender_press7()" style="width: 40.5px;cursor: pointer;
-height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px;">
-        <P [style.color]="calender_today7_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
-    text-align: center;
-    font-size: 7px; margin-top: 15px;">{{calender_today7_text}}</P>
-        <div [style.background-color]="calender_today7_circle"
-            style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
-            <P [style.color]="calender_today7_number_color" style="font-family: 'Inter' ;
-                            text-align: center;
-                           padding-top:5px;
-                            font-size: 13.5px;font-weight: bold; ">{{calender_today7_number}}</P>
-        </div>
-    </div>
-
-
-
-
-
+<p style="color: #A09CB2;
+font-family: Neo Sans Arabic;
+font-size: 8.25px;float: right; margin-top: 13.5px; margin-right: 4px;
+font-weight: 500;">{{current_display_date}}</p>
 
 
 </div>
+    
+    
+    </div>
+    <div style="height: 70%; border-top: 1px dotted #EEEDF2;border-bottom: 1px dotted #EEEDF2;">
+    
+        <div [style.background-color]="calender_today1_select" (click)="calender_press1()"
+            style="width: 40.5px;cursor: pointer;
+    height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px; margin-right: 10px; margin-left: 25px;">
+            <P [style.color]="calender_today1_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
+        text-align: center;
+        font-size: 7px; margin-top: 15px;">{{calender_today1_text}}</P>
+            <div [style.background-color]="calender_today1_circle"
+                style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
+                <P [style.color]="calender_today1_number_color" style="font-family: 'Inter' ;
+                                text-align: center;
+                               padding-top:5px;
+                                font-size: 13.5px;font-weight: bold; ">{{calender_today1_number}}</P>
+            </div>
+        </div>
+    
+        <div [style.background-color]="calender_today2_select" (click)="calender_press2()" style="width: 40.5px;cursor: pointer;
+    height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px; margin-right: 10px;">
+            <P [style.color]="calender_today2_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
+        text-align: center;
+        font-size: 7px; margin-top: 15px;">{{calender_today2_text}}</P>
+            <div [style.background-color]="calender_today2_circle"
+                style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
+                <P [style.color]="calender_today2_number_color" style="font-family: 'Inter' ;
+                                text-align: center;
+                               padding-top:5px;
+                                font-size: 13.5px;font-weight: bold; ">{{calender_today2_number}}</P>
+            </div>
+        </div>
+    
+        <div [style.background-color]="calender_today3_select" (click)="calender_press3()" style="width: 40.5px;cursor: pointer;
+    height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px; margin-right: 10px;">
+            <P [style.color]="calender_today3_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
+        text-align: center;
+        font-size: 7px; margin-top: 15px;">{{calender_today3_text}}</P>
+            <div [style.background-color]="calender_today3_circle"
+                style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
+                <P [style.color]="calender_today3_number_color" style="font-family: 'Inter' ;
+                                text-align: center;
+                               padding-top:5px;
+                                font-size: 13.5px;font-weight: bold; ">{{calender_today3_number}}</P>
+            </div>
+        </div>
+    
+        <div [style.background-color]="calender_today4_select" (click)="calender_press4()" style="width: 40.5px;cursor: pointer;
+    height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px; margin-right: 10px;">
+            <P [style.color]="calender_today4_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
+        text-align: center;
+        font-size: 7px; margin-top: 15px;">{{calender_today4_text}}</P>
+            <div [style.background-color]="calender_today4_circle"
+                style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
+                <P [style.color]="calender_today4_number_color" style="font-family: 'Inter' ;
+                                text-align: center;
+                               padding-top:5px;
+                                font-size: 13.5px;font-weight: bold; ">{{calender_today4_number}}</P>
+            </div>
+        </div>
+    
+        <div [style.background-color]="calender_today5_select" (click)="calender_press5()" style="width: 40.5px;cursor: pointer;
+    height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px; margin-right: 10px;">
+            <P [style.color]="calender_today5_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
+        text-align: center;
+        font-size: 7px; margin-top: 15px;">{{calender_today5_text}}</P>
+            <div [style.background-color]="calender_today5_circle"
+                style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
+                <P [style.color]="calender_today5_number_color" style="font-family: 'Inter' ;
+                                text-align: center;
+                               padding-top:5px;
+                                font-size: 13.5px;font-weight: bold; ">{{calender_today5_number}}</P>
+            </div>
+        </div>
+    
+        <div [style.background-color]="calender_today6_select" (click)="calender_press6()" style="width: 40.5px;cursor: pointer;
+    height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px; margin-right: 10px;">
+            <P [style.color]="calender_today6_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
+        text-align: center;
+        font-size: 7px; margin-top: 15px;">{{calender_today6_text}}</P>
+            <div [style.background-color]="calender_today6_circle"
+                style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
+                <P [style.color]="calender_today6_number_color" style="font-family: 'Inter' ;
+                                text-align: center;
+                               padding-top:5px;
+                                font-size: 13.5px;font-weight: bold; ">{{calender_today6_number}}</P>
+            </div>
+        </div>
+    
+        <div [style.background-color]="calender_today7_select" (click)="calender_press7()" style="width: 40.5px;cursor: pointer;
+    height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px;">
+            <P [style.color]="calender_today7_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
+        text-align: center;
+        font-size: 7px; margin-top: 15px;">{{calender_today7_text}}</P>
+            <div [style.background-color]="calender_today7_circle"
+                style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
+                <P [style.color]="calender_today7_number_color" style="font-family: 'Inter' ;
+                                text-align: center;
+                               padding-top:5px;
+                                font-size: 13.5px;font-weight: bold; ">{{calender_today7_number}}</P>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+
+</div>
+
+<div style="height: 75%; width: 100%;  float: left;">
+
+    <nav style="height: 95%; margin-top: 25px; overflow:hidden; overflow-y:scroll; ">
+    
+        <div *ngFor="let item of todo_list_day" [style.background-color]="item.back_color" style="width: 331.5px;
+    height: 116.333px;float: left; border-radius: 20px; margin-bottom: 15px;margin-right: 22px;margin-left: 32px;">
+    
+            <div style="height: 100%; width: 20%;float: left; ">
+    
+                <button
+                    style="float: left; padding: 5px 10px;width: 38.25px;
+    height: 31.523px;border-radius: 11.25px;background-color: #FFFFFF;cursor: pointer; border: 1px solid #FFFFFF;border-radius: 20px; margin-top: 90%;margin-left: 20%;"><img
+                        src="../../assets/Arrow - Left.png"></button>
+    
+            </div>
+    
+    
+    
+    
+    
+    
+            <div style="height: 100%; width: 80%;  float: right;">
+    
+                <P style="font-family: 'Neo Sans Arabic', sans-serif;
+                                                text-align: end;
+                                                 font-weight: bold;
+                                                font-size: 9px; margin-right: 15px;" [style.color]="item.color_title">
+                    {{item.title}}</P>
+    
+    
+    
+    
+                <div style="float: right;margin-right: 15px; width: 100%;">
+                    <img style="float: right; margin-top: 13px;" [src]="item.color_clock">
+    
+                    <P style="font-family: 'Inter' ;
+                                            text-align: center;
+                                            margin-right: 3px;
+                                            font-size: 13.5px;font-weight: bold;float: right;"
+                        [style.color]="item.color_time">{{item.time}}</P>
+    
+    
+    
+                </div>
+    
+                <img style="float: right; margin-right: 15px;" [src]="item.img">
+    
+                <P style="font-family: 'Neo Sans Arabic', sans-serif;
+    font-size: 10.5px;
+    
+    font-weight: 400;
+                                                    text-align: center;margin-top: 5px;
+                                                    margin-right: 6.75px;
+                                                   float: right;" [style.color]="item.color_name">{{item.name}}</P>
+    
+    
+            </div>
+    
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    </nav>
+
+</div>
+
+
+
+
+

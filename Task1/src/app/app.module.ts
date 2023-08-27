@@ -9,7 +9,6 @@ import { Panel2Component } from './panel2/panel2.component';
 import { Profile1Component } from './profile1/profile1.component';
 import { Profile2Component } from './profile2/profile2.component';
 import { CalendarComponent } from './calendar/calendar.component';
-import { TodoComponent } from './todo/todo.component';
 import { EmailsComponent } from './emails/emails.component';
 import { Panel3Component } from './panel3/panel3.component';
 import { TitleComponent } from './title/title.component';
@@ -24,7 +23,6 @@ import { TitleComponent } from './title/title.component';
     Profile1Component,
     Profile2Component,
     CalendarComponent,
-    TodoComponent,
     EmailsComponent,
     Panel3Component,
     TitleComponent
