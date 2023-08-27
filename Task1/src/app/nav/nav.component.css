@@ -1,7 +1,5 @@
 .nav_icon {
-    height: 50px;
-    mix-blend-mode: multiply;
-    cursor: pointer;
+    cursor: pointer;margin-bottom: 15px;margin-top: 15px;
 }
 
 .marg1 {
@@ -9,6 +7,12 @@
     text-align: end;
     color: #2E2E2E;
     cursor: pointer;
+    padding-right: 19.50px;
+
+    font-size: 13.5px;
+        font-weight: 400;
+
+        
 
 
 }
@@ -17,6 +21,10 @@
     font-family: 'Neo Sans Arabic', sans-serif;
     text-align: end;
     color: #CFCFCF;
+
+    font-size: 12px;
+        
+        font-weight: 400;
 
 
 

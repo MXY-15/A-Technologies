@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class Panel1Component {
 
+  panel1_title:string = "قراءات تانية";
+  panel1_number:number = 35; 
+
 }

@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class EmailsComponent {
 
+    emails_page_m(){
+  
+   }
+
+     emails_page_p(){
+  
+   }
+
 }

@@ -6,85 +6,117 @@
     font-size: 12px; margin-top: 25px;margin-right: 25px;font-weight: bold;">تقويم المواعيد</P>
 
 
-    <img src="../../assets/icon.png" style="float: right;margin-top: 25px;margin-right: 25px;cursor: pointer;">
+    <img (click)="calender_week_m()" src="../../assets/icon.png" style="float: right;margin-top: 25px;margin-right: 25px;cursor: pointer;">
 
-    <img src="../../assets/icon (1).png" style="float: right;margin-top: 25px;margin-right: 25px;cursor: pointer;">
+    <img (click)="calender_week_p()" src="../../assets/icon (1).png" style="float: right;margin-top: 25px;margin-right: 25px;cursor: pointer;">
 
 
 </div>
 <div style="height: 70%; border-top: 1px dotted #EEEDF2;border-bottom: 1px dotted #EEEDF2;">
 
-    <div style="height: 100%; width: 14%;  float: left; margin-left: 0.25%;">
-        <P style="font-family: 'Neo Sans Arabic', sans-serif;
+    <div [style.background-color]="calender_today1_select" (click)="calender_press1()"
+        style="width: 40.5px;cursor: pointer;
+height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px; margin-right: 10px; margin-left: 25px;">
+        <P [style.color]="calender_today1_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
     text-align: center;
-    color: #B4B4B4; 
-    font-size: 7px; margin-top: 35px;">الجمعة</P>
+    font-size: 7px; margin-top: 15px;">{{calender_today1_text}}</P>
+        <div [style.background-color]="calender_today1_circle"
+            style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
+            <P [style.color]="calender_today1_number_color" style="font-family: 'Inter' ;
+                            text-align: center;
+                           padding-top:5px;
+                            font-size: 13.5px;font-weight: bold; ">{{calender_today1_number}}</P>
+        </div>
+    </div>
 
-        <P style="font-family: 'Inter' ;
-                text-align: center;
-                color: #000000;
-                font-size: 13.5px;font-weight: bold;margin-top: 25px;cursor: pointer;">00</P>
+    <div [style.background-color]="calender_today2_select" (click)="calender_press2()" style="width: 40.5px;cursor: pointer;
+height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px; margin-right: 10px;">
+        <P [style.color]="calender_today2_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
+    text-align: center;
+    font-size: 7px; margin-top: 15px;">{{calender_today2_text}}</P>
+        <div [style.background-color]="calender_today2_circle"
+            style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
+            <P [style.color]="calender_today2_number_color" style="font-family: 'Inter' ;
+                            text-align: center;
+                           padding-top:5px;
+                            font-size: 13.5px;font-weight: bold; ">{{calender_today2_number}}</P>
+        </div>
+    </div>
 
-    </div>
-    <div style="height: 100%; width: 14%; float: left;margin-left: 0.25%;">
-        <P style="font-family: 'Neo Sans Arabic', sans-serif;
+    <div [style.background-color]="calender_today3_select" (click)="calender_press3()" style="width: 40.5px;cursor: pointer;
+height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px; margin-right: 10px;">
+        <P [style.color]="calender_today3_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
     text-align: center;
-    color: #B4B4B4; 
-    font-size: 7px; margin-top: 35px;">الخميس</P>
-        <P style="font-family: 'Inter' ;
-                    text-align: center;
-                    color: #000000;
-                    font-size: 13.5px;font-weight: bold;margin-top: 25px;cursor: pointer;">00</P>
+    font-size: 7px; margin-top: 15px;">{{calender_today3_text}}</P>
+        <div [style.background-color]="calender_today3_circle"
+            style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
+            <P [style.color]="calender_today3_number_color" style="font-family: 'Inter' ;
+                            text-align: center;
+                           padding-top:5px;
+                            font-size: 13.5px;font-weight: bold; ">{{calender_today3_number}}</P>
+        </div>
     </div>
-    <div style="height: 100%; width: 14%; float: left;margin-left: 0.25%;">
-        <P style="font-family: 'Neo Sans Arabic', sans-serif;
+
+    <div [style.background-color]="calender_today4_select" (click)="calender_press4()" style="width: 40.5px;cursor: pointer;
+height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px; margin-right: 10px;">
+        <P [style.color]="calender_today4_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
     text-align: center;
-    color: #B4B4B4; 
-    font-size: 7px; margin-top: 35px;">الأربعاء</P>
-        <P style="font-family: 'Inter' ;
-                    text-align: center;
-                    color: #000000;
-                    font-size: 13.5px;font-weight: bold;margin-top: 25px;cursor: pointer;">00</P>
+    font-size: 7px; margin-top: 15px;">{{calender_today4_text}}</P>
+        <div [style.background-color]="calender_today4_circle"
+            style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
+            <P [style.color]="calender_today4_number_color" style="font-family: 'Inter' ;
+                            text-align: center;
+                           padding-top:5px;
+                            font-size: 13.5px;font-weight: bold; ">{{calender_today4_number}}</P>
+        </div>
     </div>
-    <div style="height: 100%; width: 14%; float: left;margin-left: 0.25%;">
-        <P style="font-family: 'Neo Sans Arabic', sans-serif;
+
+    <div [style.background-color]="calender_today5_select" (click)="calender_press5()" style="width: 40.5px;cursor: pointer;
+height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px; margin-right: 10px;">
+        <P [style.color]="calender_today5_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
     text-align: center;
-    color: #B4B4B4; 
-    font-size: 7px; margin-top: 35px;">الثلاثاء</P>
-        <P style="font-family: 'Inter' ;
-                    text-align: center;
-                    color: #000000;
-                    font-size: 13.5px;font-weight: bold;margin-top: 25px;cursor: pointer;">00</P>
+    font-size: 7px; margin-top: 15px;">{{calender_today5_text}}</P>
+        <div [style.background-color]="calender_today5_circle"
+            style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
+            <P [style.color]="calender_today5_number_color" style="font-family: 'Inter' ;
+                            text-align: center;
+                           padding-top:5px;
+                            font-size: 13.5px;font-weight: bold; ">{{calender_today5_number}}</P>
+        </div>
     </div>
-    <div style="height: 100%; width: 14%; float: left;margin-left: 0.25%;">
-        <P style="font-family: 'Neo Sans Arabic', sans-serif;
+
+    <div [style.background-color]="calender_today6_select" (click)="calender_press6()" style="width: 40.5px;cursor: pointer;
+height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px; margin-right: 10px;">
+        <P [style.color]="calender_today6_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
     text-align: center;
-    color: #B4B4B4; 
-    font-size: 7px; margin-top: 35px;">الإثنين</P>
-        <P style="font-family: 'Inter' ;
-                    text-align: center;
-                    color: #000000;
-                    font-size: 13.5px;font-weight: bold;margin-top: 25px;cursor: pointer;">00</P>
+    font-size: 7px; margin-top: 15px;">{{calender_today6_text}}</P>
+        <div [style.background-color]="calender_today6_circle"
+            style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
+            <P [style.color]="calender_today6_number_color" style="font-family: 'Inter' ;
+                            text-align: center;
+                           padding-top:5px;
+                            font-size: 13.5px;font-weight: bold; ">{{calender_today6_number}}</P>
+        </div>
     </div>
-    <div style="height: 100%; width: 14%; float: left;margin-left: 0.25%;">
-        <P style="font-family: 'Neo Sans Arabic', sans-serif;
+
+    <div [style.background-color]="calender_today7_select" (click)="calender_press7()" style="width: 40.5px;cursor: pointer;
+height: 75.75px; float: left;margin-left: 0.25%;border-radius: 9px; margin-top: 20px;">
+        <P [style.color]="calender_today7_text_color" style="font-family: 'Neo Sans Arabic', sans-serif;
     text-align: center;
-    color: #B4B4B4; 
-    font-size: 7px; margin-top: 35px;">الاحد</P>
-        <P style="font-family: 'Inter' ;
-                    text-align: center;
-                    color: #000000;
-                    font-size: 13.5px;font-weight: bold;margin-top: 25px;cursor: pointer;">00</P>
+    font-size: 7px; margin-top: 15px;">{{calender_today7_text}}</P>
+        <div [style.background-color]="calender_today7_circle"
+            style=" height: 28.7px;width: 28.7px; border-radius: 100%;margin-bottom: auto;margin-top: auto;margin-left: auto;margin-right: auto;">
+            <P [style.color]="calender_today7_number_color" style="font-family: 'Inter' ;
+                            text-align: center;
+                           padding-top:5px;
+                            font-size: 13.5px;font-weight: bold; ">{{calender_today7_number}}</P>
+        </div>
     </div>
-    <div style="height: 100%; width: 14%; float: left;margin-left: 0.25%;margin-right: 0.25%;">
-        <P style="font-family: 'Neo Sans Arabic', sans-serif;
-    text-align: center;
-    color: #B4B4B4; 
-    font-size: 7px; margin-top: 35px;">السبت</P>
-        <P style="font-family: 'Inter' ;
-                    text-align: center;
-                    color: #000000;
-                    font-size: 13.5px;font-weight: bold; margin-top: 25px;cursor: pointer;">00</P>
-    </div>
+
+
+
+
+
+
 
 </div>
